@@ -1,4 +1,5 @@
 {% load static %}
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +35,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% provider_login_url 'github' %}">Sign Up with GitHub</a>
                     </li>
                 {% endif %}
                 </ul>
