@@ -152,6 +152,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # django-allauth config
 SITE_ID = 1
 
+DEFAULT_FROM_EMAIL = "admin@dazaibookstore.com"
+
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
 ACCOUNT_USERNAME_REQUIRED = False
