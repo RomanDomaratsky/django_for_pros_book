@@ -22,6 +22,10 @@
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'book_list' %}">Books</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
 
@@ -35,9 +39,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% provider_login_url 'github' %}">Sign Up with GitHub</a>
                     </li>
                 {% endif %}
                 </ul>
